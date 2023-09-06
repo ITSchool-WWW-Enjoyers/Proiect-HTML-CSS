@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 auto;
+}
+
+.header-item {
+    background-image: url(Index-Assets/header-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.logo-header {
+    height: 5vh;
+    width: 8vw;
+    position: absolute;
+    inset-inline: 1rem;
+    inset-block: 0.75rem;
+    margin: 0;
+}
+
+.header-text {
+    display: flex;
+    width: 5vw;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 2.19rem; 
+    font-weight: 700; 
+    color: #FFF;
+    margin: 0;
+    position: relative;
+    inset-block-start: 35%;
+    user-select: none;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    gap: 1rem;
+    padding: 1.13rem 1rem 0 1rem;
+    margin: 0;
+}
+
+.headings {
+    display: flex;
+    font-size: 1.5625rem; 
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto; 
+    width: 92vw;
+}
+
+.paragraph-style {
+    color: #0B1D27;
+    font-size: 0.95rem; 
+    font-weight: 500; 
+    width: 92vw;
+    margin: auto;
+}
+
+:is(.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+    display: flex;
+    width: 92vw;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+:is(.image3, .image4, .image7, .image8, .image9) {
+    margin-block-end: 1rem;
+}
+
+.image2 {
+    height: 15vh;
+}
+
+:is(.image3, .image4, .image5, .image7, .image8, .image9, .image10) {
+    height: 57vh;
+}
+
+:is(.textoverimage1, .textoverimage2, .textoverimage3, .textoverimage4) {
+    position: absolute;
+    font-size: 1.56rem; 
+    font-weight: 600;
+    color: #FFF;
+    text-transform: capitalize;
+    text-align: center;
+    margin-block-start: 51.5vh;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+}
+
+.credits {
+    color: #0B1D27; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.375rem;
+    font-family: Montserrat;
+    font-weight: 500; 
+    padding-block-start: 1.44rem;
+    padding-block-end: 1.06rem;
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0B1D27; 
+    }
+
+    .headings {
+        color: #FFF;
+    }
+
+    .paragraph-style {
+        color: #FFF;
+    }
+
+    .credits {
+        color: #FFF;
+    }
+}
+
+@media (min-width: 1515px) {
+    .header-item {
+        height: 100vh;
+    }
+
+    .logo-header {
+        height: 8vh;
+        width: 8vw;
+        position: absolute;
+        inset-inline: 0.5rem;
+        inset-block: 1rem;
+    }
+
+    .header-text {
+        width: auto;
+        font-size: 6.25rem; 
+    }
+
+    .container {
+        gap: 2.56rem;
+        padding: 2.56rem 3.12rem 0 3.12rem;
+        margin: 0 12.5rem 0 12.5rem;
+    }
+
+    .headings {
+        font-size: 4rem; 
+        margin: auto 5rem auto auto;  
+        width: 100%;
+    }
+
+    .paragraph-style {
+        font-size: 1.875rem; 
+        font-weight: 500; 
+        width: auto;
+        max-height: 100%;
+        margin: auto 5rem auto auto;
+        width: 100%;
+    }
+
+    .rows {
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    :is(.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+        border-radius: 2.5rem; 
+    }
+
+    .image1 {
+        margin: 0;
+        max-width: 40rem;
+        height: 100%;
+    }
+
+    .image2 {
+        height: 36.44rem;
+        width: 100%;
+    }
+
+    :is(.image3, .image4, .image5) {
+        max-width: 32%;
+        height: auto;
+    }
+
+    .image6 {
+        max-height: 42rem;
+        max-width: 40rem;
+        margin: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        }
+
+    :is(.image7, .image8, .image9, .image10) {
+        height: 35rem;
+        max-width: 95%;
+    }
+
+    :is(.textoverimage1, .textoverimage2, .textoverimage3, .textoverimage4) {
+        position: relative;
+        font-size: 1.56rem; 
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        inset-block-start: 33rem;
+    }
+
+    .credits {
+        font-size: 1rem;
+    }
+
+    .expand:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 1471px) and (max-width: 1550px) {
+    .paragraph-style {
+        font-size: 1.6rem; 
+    }
+}
+
+
