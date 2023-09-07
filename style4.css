@@ -168,6 +168,8 @@ body{
     
     .food1, .food3, .food2{
         width: 100%;
+        height: auto;
+        margin-top: 3rem;
     }
     .title{
         font-size: 2rem;

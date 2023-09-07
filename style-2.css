@@ -114,6 +114,10 @@ body{
     .part-2{
         margin-inline: 5%;
     }   
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width: 1350px){
     .logo-name{
