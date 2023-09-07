@@ -146,6 +146,7 @@ body{
     .description1, .description3,.description2{
         grid-column: 1/4;
         grid-row: 2/3;
+        margin-inline: 2%;
     }
     .food1, .food3,.food2{
         width: 35rem;
@@ -173,6 +174,9 @@ body{
     }
     .title{
         font-size: 2rem;
+    }
+    .meniu{
+        margin-inline: 3%;
     }
 }  
 @media (max-width: 1350px){
