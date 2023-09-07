@@ -167,8 +167,7 @@ body{
 @media (max-width: 700px) {
     
     .food1, .food3, .food2{
-        width: 25rem;
-        height: 18rem;
+        width: 100%;
     }
     .title{
         font-size: 2rem;
