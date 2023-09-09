@@ -1,0 +1,129 @@
+@import url(styles-global.css);
+
+.header-item {
+    background-image: url(../Index-Assets/header-image.jpg);
+}
+
+.header-text {
+    width: 5vw;
+}
+
+.paragraph-style {
+    margin: auto;
+}
+
+:is(.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+    display: flex;
+    width: 92vw;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+:is(.image3, .image4, .image7, .image8, .image9) {
+    margin-block-end: 1rem;
+}
+
+.image2 {
+    height: 15vh;
+}
+
+:is(.image3, .image4, .image5, .image7, .image8, .image9, .image10) {
+    height: 57vh;
+}
+
+:is(.textoverimage1, .textoverimage2, .textoverimage3, .textoverimage4) {
+    position: absolute;
+    font-size: 1.56rem; 
+    font-weight: 600;
+    color: #FFF;
+    text-transform: capitalize;
+    text-align: center;
+    margin-block-start: 51.5vh;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+}
+
+@media (min-width: 1515px) {
+    .header-text {
+        width: auto;
+        font-size: 6.25rem; 
+    }
+
+    .rows {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    :is(.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+        border-radius: 2.5rem; 
+    }
+
+    :is(.image3, .image4) {
+        margin-block-end: 0rem;
+    }
+
+    .image1 {
+        margin: 0;
+        max-width: 40rem;
+        height: 100%;
+    }
+
+    .image2 {
+        height: 36.44rem;
+        width: 100%;
+    }
+
+    :is(.image3, .image4, .image5) {
+        max-width: 32%;
+        height: auto;
+    }
+
+    .image6 {
+        max-height: 42rem;
+        max-width: 40rem;
+        margin: 0;
+    }
+
+    .image10 {
+        margin-block-end: 1rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        }
+
+    :is(.image7, .image8, .image9, .image10) {
+        height: 35rem;
+        max-width: 95%;
+    }
+
+    :is(.textoverimage1, .textoverimage2, .textoverimage3, .textoverimage4) {
+        position: relative;
+        font-size: 1.56rem; 
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        inset-block-start: 33rem;
+    }
+
+    .expand:hover {
+        transition: all 500ms;
+        transform: scale(1.05);
+    }
+}
+
+
