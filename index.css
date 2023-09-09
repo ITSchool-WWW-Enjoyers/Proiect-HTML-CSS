@@ -1,0 +1,218 @@
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header-info{
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        margin-block-end: 2rem;
+        margin-inline: 0.5rem;
+    }
+
+
+    .background-image{
+        background: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-block-end: 5rem; 
+        padding-block-start: 1rem;  
+    }
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(9, 150, 150, 0.56);
+        margin-inline: 5rem;
+        margin-block: 3rem;
+        border-radius: 2rem;
+        padding: 1rem;
+        justify-content:space-between;
+        gap: 2rem;
+        margin-inline: 3rem;
+    }
+
+    .logo{
+        display: flex;
+        align-self: center;
+        width:fit-content;
+        height: 5rem;
+    }
+
+    .menu-items{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-button{
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background-color: rgba(119, 182, 161, 0.353);
+        border-radius: 2rem;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: 0.1s;
+        white-space: nowrap;
+    }
+
+    .menu-button:hover{
+        transform: scale(1.1);
+    }
+
+
+    .logo-container{     
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 15rem);
+            gap: 2rem;          
+            justify-content: center;
+            margin-block: 2rem;      
+    }
+
+    .item-logo{
+        height: 2rem;
+        transition: 0.2s;
+    }
+
+    .item-logo:hover{
+        transform: scale(1.4);    
+    }
+
+    
+    .contact-icon{
+        height: 1rem; 
+    }
+
+    .brief-content{
+        text-align: center;
+    }
+
+    .gray-paragraph{
+        color: gray;
+    }
+
+    .top-destination-container{
+        background-image: linear-gradient(rgb(173, 23, 23), rgb(250, 250, 91));
+        padding-block: 2rem;
+        
+    }
+
+    .pictures{
+       
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 15rem);
+        gap: 2rem;
+        align-content: center;
+        justify-content: center;
+}
+
+    .top-destination-pictures{
+        margin: auto;
+        width: 15rem;
+        height: 10rem;
+        border-radius: 2rem;
+        box-shadow: 10px 10px 5px #605a5a99;
+        transition: 0.2s;     
+    }
+
+    .top-destination-pictures:hover{
+        transform: scale(1.1);
+    }
+
+    .top-destination-title{
+        text-align: center;
+    }
+
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+        margin-block-start: 2rem;     
+    }
+
+    .font-family-footer{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+
+   
+
+@media (min-width: 576px){
+
+    .background-image{
+        background: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 18rem;     
+    }
+
+    
+
+    .navigation-menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgba(9, 150, 150, 0.56);
+        margin-block: 3rem;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        column-gap: 50px;
+        margin-inline: 2rem;
+    }
+
+    .logo{
+        width: auto;
+        height: 2.5rem;
+    }
+
+    .menu-items{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 1.5rem;        
+    }
+
+    .menu-button{
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    .menu-button:hover{
+        background-color: rgba(79, 141, 120, 0.353);
+        border-radius: 2rem;      
+    }
+
+   
+
+    .logo-container{
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        margin-block: 2rem;
+        gap: 3rem;
+             
+    }
+
+
+    .pictures{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 15rem);
+        gap: 2rem;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+
+   
+}
