@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* index.html - start*/
+
+.main-nav {
+    position: sticky;
+    top: 0.5rem;
+    z-index: 22222;
+    border: 3px solid #34dac9;
+    border-radius: 1rem;
+    margin: 0.5em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.2rem 0;
+    margin: .4rem;
+    position: sticky;
+    top: 0.5rem;
+}
+
+.navbar ul li {
+    margin: 0 0.5rem;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #34dac9;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #34dac9;
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    transition: 0.3s ease-out;
+}
+
+.poza {
+    padding: .5rem;
+    width: 97%;
+    margin: 0.5rem auto;
+    height: 75vh;
+    background-image: url(../img/poza.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.s-container {
+    max-width: 100%;
+    margin: 0.5rem;
+}
+.p-container {
+    background-color: rgb(52, 218, 201, 0.3);
+    border-radius: 1rem;
+}
+
+.p-articol {   
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.blog {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #34dac9;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    text-decoration:none; 
+}
+
+.suplimente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.25rem 0;
+    gap: 0.6rem;
+}
+
+.poza-suplimente {
+    padding: 1rem;
+    width: 100%;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: translateX(0%);
+}
+.poza-suplimente:hover {
+    transform: scale(0.95);
+}
+
+.h2-suplimente {
+    text-transform: uppercase;
+    text-align: center;
+    animation-name: h2-suplimente;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: translateX(0%);
+}
+
+.p2-suplimente {
+    text-align: center;
+    padding: 0.25rem;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: translateX(0%);
+}
+
+.a-suplimente {
+    background-color: #34dac9; 
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.7em 0.9em;
+    margin: 0 auto;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration:none;
+}
+.a-suplimente:hover {
+    animation-name: buton;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.footer {
+    padding: 0.5rem;
+}
+
+.f-ul {
+    display:flex;
+    gap: 1.4rem;
+}
+
+.svg {
+    width: 3rem;
+    height: 3rem;
+    border: 0.25rem solid rgb(52, 218, 201);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    fill:#34dac9; /* nu se pune culoarea pe svg, de ce ? */
+}
+
+.p-footer {
+    text-align: center;
+}
+
+/* index.html - end*/
+
+/* contact.html - start*/
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.h1-head {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin-top: 0.62rem;
+    font-weight: bold;
+}
+
+.input {
+    padding: 0.62rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.buton-trimitere {
+    background-color: #34dac9;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buton-trimitere:hover {
+    background-color: #34dac9;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.p3 {
+    text-align: center;
+}
+
+.iframe-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+/* contact.html - end*/
+
+/* modal.html - start*/
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: modal;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-sizec {
+    font-size: 1.5rem;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    text-decoration: none;
+    color: #34dac9;
+}
+
+/* modal.hml - end*/
+
+/* blog.html - start*/
+
+
+.main-articol {
+    margin: 0.4rem;
+    border-radius: 1rem;
+    background: rgba(52, 218, 201, 0.2);
+    box-shadow: 8px 6px 18px -6px rgba(0, 0, 0, 0.25);
+    gap: 0.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.test {
+    display: grid;
+    margin: 0.5rem;
+}
+
+.h2-articol {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+   text-align: center;
+}
+
+.h3-aricol {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.p-sport2 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.p-sport {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.articol-img{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.sport-articol{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.sport-ul {
+    padding: 1rem;
+}
+
+.sport-ol {
+    padding: 1rem;
+}
+
+.p-sport {
+    padding: 1rem;
+    text-align: start;
+   
+}
+
+.articol-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5em auto;
+    
+}
+
+.suplimente-articol {
+    padding: 1rem;
+    text-align: justify;
+}
+
+/* blog.html - end*/
+
+/* keyframes - start*/
+
+@keyframes modal {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes h2-suplimente {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes buton{
+    0% { 
+        transform: translate(0);
+    }
+    20%, 40%, 60%, 80% {
+       transform: translate(.8em);
+       box-shadow: 0 .3rem 1rem  rgba(0,0,0,.5);
+    }
+    10%, 30%, 50% {
+        transform: translate(-.2em);
+    }
+    70%, 100%{
+        transform: translate(0%);
+    }
+}
+
+/* keyframes - end*/
+
+/* media queries - start*/
+
+@media (min-width: 768px) and (max-width: 1023px){
+    /* Stiluri pentru tablete */
+    .main-nav {
+      width: 85%;
+      margin: 0.5rem auto;
+    }
+
+    .p-container {
+        width: 75%;
+        margin: 0.5rem auto;
+    }
+
+    .h2-suplimente {
+        font-size: 2rem;
+    }
+
+    .p2-suplimente {
+        font-size: 1.15rem;
+    }
+
+    .a-suplimente {
+        padding: 0.7em 1.2em;
+    }
+
+    .svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .p-footer {
+        font-size: 1.088rem;
+    }
+
+    .ul-nav {
+        font-size: 1.1rem;
+    }
+
+    .cont { 
+        width: 90%;
+        margin: auto;
+    }
+
+    .buton-trimitere{
+        font-size: 1.025rem;
+    }
+
+    .info {
+        font-size: 1.15rem;
+    }
+
+    .iframe-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-articol{
+        width: 90%;
+        margin: auto;
+    }
+  }
+
+
+@media (min-width: 1024px) {
+    /* Stiluri pentru desktop */
+    .main-nav {
+        width: 45%;
+        margin: 0.5rem auto;
+    }
+
+    .p-container {
+        width: 70%;
+        margin: 0.5rem auto;
+    }
+
+    .suplimente{
+        margin: 0.25rem;
+    }
+
+    .h2-suplimente {
+        font-size: 2.5rem;
+    }
+
+    .p2-suplimente {
+        font-size: 1.25rem;
+    }
+
+    .a-suplimente {
+        padding: 0.7em 1.5em;
+    }
+
+    .svg {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .p-footer {
+        font-size: 1.25rem;
+    }
+
+    .ul-nav {
+        font-size: 1.2rem;
+    }
+
+    .poza {
+        width: 85%;
+        height: 85vh;
+    }
+
+    .blog {
+        top: 85%;
+    }
+
+    .cont { 
+        width: 75%;
+        margin: auto;
+    }
+
+    .buton-trimitere{
+        font-size: 1.025rem;
+    }
+
+    .info {
+        font-size: 1.15rem;
+        margin: 1rem;
+    }
+
+    .iframe-container {
+        width: 75%;
+        margin: auto;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    .main-articol {
+        width: 50%;
+        margin: auto;
+    }
+
+    .articol-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 320px) {
+    .p-container {
+        width: 75%;
+        margin: 0.5rem auto;
+    }
+
+    .p-articol {
+        font-size: 1rem;
+    }
+
+    .blog {
+        top: 82%;
+    }
+}
+@media (max-width: 768px) and (max-height: 320px) {
+    .poza {
+        height: 100vh;
+    }
+
+    .blog {
+        top: 95%;
+    }
+}
+
+@media (max-width: 794px) and (max-height: 320px) {
+    .poza {
+        height: 105vh;
+    }
+
+    .blog {
+        top: 105%;
+    }
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 218, 201, 0.7); /* Schimbă culoarea la cea dorită */
+}
