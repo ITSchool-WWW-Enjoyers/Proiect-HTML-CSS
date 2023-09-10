@@ -1,0 +1,81 @@
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .background-image-container{
+        background: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-block-end: 6rem; 
+        padding-block-start: 2rem; 
+        margin-block-start: 1rem; 
+    }
+
+    .icon-container{     
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 15rem);
+        gap: 2rem;          
+        justify-content: center;
+        margin-block: 2rem;      
+    }
+
+    .brief-content-icon{
+        width: 3rem;
+        transition: 0.2s;
+    }
+
+    .brief-content-icon:hover{
+        transform: scale(1.4);    
+    }
+
+    .brief-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+
+    }
+
+    .gray-paragraph{
+        color: gray;
+        font-family: 'Crimson Pro', serif;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+ 
+    .top-destinations-title{
+        text-align: center;
+        margin-block: 2rem;
+        font-family: 'Crimson Pro', serif;
+        color: rgb(39, 112, 152);
+        font-size: 30px;
+    }
+
+
+@media (min-width: 576px){
+
+    .background-image-container{
+        padding-bottom: 18rem;     
+    }
+
+    .icon-container{
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        margin-block: 2rem;
+        gap: 3rem;
+             
+    }
+
+    .top-destinations-title{
+        font-size: 40px;
+    }
+
+}

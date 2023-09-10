@@ -1,0 +1,28 @@
+ 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .relax-background{   
+    display: block;
+    width: 100%;
+}
+
+.destinations-title{
+    text-align: center;
+    color: rgb(39, 112, 152);
+    margin-block: 2rem;
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
+}
+
+@media (min-width: 576px){
+
+    .destinations-title{
+        font-size: 40px;
+    }
+}
+
