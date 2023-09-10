@@ -50,22 +50,10 @@ body{
     margin-inline: 0.75rem;
 }
 
-.rand-unu{
+.rand{
     display:flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.rand-doi{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.rand-trei{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .spatiu{
