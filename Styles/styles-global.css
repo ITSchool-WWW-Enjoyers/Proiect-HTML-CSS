@@ -36,7 +36,7 @@ body {
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: Montserrat, Segoe UI;
   font-size: 2.19rem; 
   font-weight: 700; 
   color: #FFF;
@@ -51,7 +51,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  font-family: Montserrat;
+  font-family: Montserrat, Segoe UI;
   gap: 1.19rem;
   padding: 1.13rem 1rem 0 1rem;
   margin: 0;
@@ -79,7 +79,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.375rem;
-  font-family: Montserrat;
+  font-family: Montserrat, Segoe UI;
   font-weight: 500; 
   padding-block-start: 1.44rem;
   padding-block-end: 1.06rem;
@@ -93,7 +93,7 @@ body {
 .navbar {
   height: 30vh;
   width: auto;
-  font-family: Montserrat;
+  font-family: Montserrat, Segoe UI;
   overflow: hidden;
   float: right;
   margin: 0;
