@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #47a56c43;
+    font-family: 'Forum', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navbar {
+    background-color: #47a56c43;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    padding: 0.5rem;
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+}
+
+.image {
+    width: 100%;
+    height: 30rem;
+}
+
+.logo-HP {
+    font-family: 'Forum', cursive;
+    font-size: 5rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    width: 100%;
+}
+
+.tiket-info {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.carusel {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.carusel.img {
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .carusel{
+        margin-inline-start: 0.5rem;
+    }
+    .image {
+        width: auto;
+        height: 30rem;
+    }
+
+    .navbar {
+        gap: 1rem;
+    }
+
+    .carusel {
+        flex-direction: column;
+    }
+}
