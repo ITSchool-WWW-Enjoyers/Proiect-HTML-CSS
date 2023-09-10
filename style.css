@@ -197,7 +197,8 @@ body {
         font-size: 0.8rem;
 
     }
-    .intro{
+
+    .intro {
         padding-block-start: 2rem;
     }
 
@@ -225,16 +226,17 @@ body {
         padding-block-start: 1rem;
 
     }
+
     body {
         background-size: 160%;
-       
-        
+
+
     }
 
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
 
     .description {
 
@@ -242,45 +244,40 @@ body {
     }
 
     .first-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .second-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .third-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .fourth-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
+
     .intro>h2 {
         font-size: 1.2rem;
         margin-inline-start: 1rem;
     }
+
     .intro>p {
         font-size: 0.8rem;
 
     }
+
     body {
         background-size: 170%;
-       
-    
+
+
     }
 
 
 }
-
-
-
