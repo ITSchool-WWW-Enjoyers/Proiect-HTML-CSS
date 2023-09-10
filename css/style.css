@@ -21,7 +21,6 @@ a{
     --buttons-color: #FAC898;
 }
 /* end reset */
-
 .container-fluid{
     width: 100%;
     position: relative;
@@ -36,10 +35,6 @@ a{
     background-size: cover;
     background-position: center;
     filter: brightness(0.7) saturate(1); /* face ca imaginea sa fie mai inchisa la culoare */
-}
-section{
-    margin: 2rem;
-    padding: 2rem;
 }
 .description{
     font-weight: 400;
@@ -71,7 +66,6 @@ section{
 }
 .header-logo{
     width: 8rem;
- 
 }
 .links{
     font-size: 2rem;
@@ -127,8 +121,10 @@ p{
     font-weight:900;
 }
 .img{
-    display: block;
+    /* display: block;
+    max-width: 100%; */
     max-width: 100%;
+    height: auto;
 } 
 .title{
     color: var(--black-color);
@@ -235,9 +231,11 @@ p{
 }
 .go-to-exeditiond{
     border: 1px solid var(--black-color);
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem;
     background: var(--buttons-color);
+    align-items: center;
+
 }
 .center{
     text-align: center;
@@ -259,15 +257,17 @@ p{
     .center-height {
         justify-content: center;
     }
+    .header{
+        flex-direction: column;
+    }
     .media-go{
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .line{
-        width: auto;
+    .header-logo{
+        justify-content: center;
     }
-    
     .row-info {
         flex-direction: column; 
         text-align: center;
@@ -278,16 +278,14 @@ p{
         width: 100%; 
 }
     .col-2{
-        flex: none;
+        display: flex;
         width: 100%;
+        align-items: center;
+        flex-direction: row;
     }
     .line{
         width: 100%;
         margin: auto;
-    }
-    .nav-bar{
-        align-items: center;
-        flex-direction: column;
     }
     .title{
         align-items: center;
@@ -303,5 +301,11 @@ p{
         width: 100%;
         padding: 1rem;
     }
-    
+    .links{
+        display: flex;
+    }
+    .image-text{
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
 }
