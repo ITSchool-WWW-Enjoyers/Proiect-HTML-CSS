@@ -1,7 +1,6 @@
 .menu{
-    position: fixed;
+    position: sticky;
     inset-block-start: 0;
-    inset-block-end: 75%;
     inset-inline: 0;
     display: flex;
     align-items: center;
@@ -30,10 +29,7 @@ a:hover{
 } 
 .buttons{
     display: flex;
-    align-items: flex-end;
-    font-family: 'Sedgwick Ave Display';
-   
-    
+    font-family: 'Sedgwick Ave Display';  
 }
 .logo-name{
     font-family: 'Sedgwick Ave Display';
@@ -44,7 +40,6 @@ body{
     background-color: #bf9d41c3;
 }
 .contact{
-    margin-top: 14.3rem;
     display: grid;
     grid-template-columns: 1fr 6fr 0.5fr 4fr 1fr;
 }
@@ -67,7 +62,6 @@ body{
         display: grid;
         grid-template-rows: 4fr 1fr;
         grid-template-columns: 1fr 1fr;
-        inset-block-end: 70%;
     }
 
     .logo-name {

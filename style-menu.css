@@ -1,7 +1,6 @@
 .menu{
-    position: fixed;
+    position: sticky;
     inset-block-start: 0;
-    inset-block-end: 75%;
     inset-inline: 0;
     display: flex;
     align-items: center;
@@ -10,7 +9,7 @@
     justify-content: space-between;
     background-color: #ffc72cc4;
     z-index: 1;
-    margin-inline: 0;   
+    margin-inline: 0;  
 }
 .logo-chicken{
     width: 10rem;
@@ -29,8 +28,8 @@ a:hover{
 } 
 .buttons{
     display: flex;
-    align-items: flex-end;
-    font-family: 'Sedgwick Ave Display';    
+    font-family: 'Sedgwick Ave Display';
+
 }
 .logo-name{
     font-family: 'Sedgwick Ave Display';
@@ -41,7 +40,7 @@ body{
     background-color: #bf9d41c3;
 }
 .meniu{
-    margin-top: 14.7rem;
+    margin-top: 2.7rem;
     margin-inline: 7%;
     background-image: radial-gradient(#3a3a36d6, #000000);
     border: solid black 0.2rem;
@@ -129,7 +128,6 @@ body{
         display: grid;
         grid-template-rows: 4fr 1fr;
         grid-template-columns: 1fr 1fr;
-        inset-block-end: 70%;
     }
     .logo-name {
         font-size: 1rem !important;
