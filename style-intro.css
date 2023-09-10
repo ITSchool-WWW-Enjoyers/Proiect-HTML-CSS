@@ -39,9 +39,10 @@ a:hover{
     font-size: 3rem;
 }
 body{
-    background-image: url('background2.jpg');
+    background-image: url('Photos/background2.jpg');
     background-color: rgba(0, 0, 0, 0.081);
     background-size: cover;
+    margin: 0;
 }
 .welcome{
     position: absolute;
