@@ -6,84 +6,8 @@
     box-sizing: border-box;
 }
 
-.header-destinations{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-inline: 1rem;
-}
-
-.slogan{
-    
-    font-family: 'Caveat', cursive;
-    color: rgb(39, 112, 152);
-    text-align: center;
-}
-
-.contact-link{
-    text-decoration: none;
-
-}
-
-.contact-item{ 
-    height: 1rem;
-    border-radius: 14px;
-    box-shadow: 1px 1px 5px 1px rgba(65, 63, 63, 0.636);
-    padding: 0.2rem;
-      
-}
-
-.navigation-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: flex-end;
-    align-self: center;
-    background-color: rgba(9, 150, 150, 0.56);
-    margin-inline: 5rem;
-    margin-block: 3rem;
-    border-radius: 2rem;
-    padding: 1rem;
-    justify-content:space-between;
-    gap: 2rem;
-    margin-inline: auto;
-}
-
-
-.logo{
-    display: flex;
-    align-self: center;
-    height: 5rem;
-}
-
-
-.menu-items{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu-button{
-    color: rgb(255, 255, 255);
-    background-color: rgba(119, 182, 161, 0.353);
-    border-radius: 2rem;
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: 0.1s;
-    white-space: nowrap;
-}
-
-.menu-button:hover{
-    transform: scale(1.1);
-    background-color: rgba(79, 141, 120, 0.353);
-}
-
-
  .relax-background{   
     display: block;
-    margin-inline: auto;
-    margin-block-start: 3rem;
     width: 100%;
 }
 
@@ -91,69 +15,14 @@
     text-align: center;
     color: rgb(39, 112, 152);
     margin-block: 2rem;
-    text-transform:uppercase;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
 }
-
-.destinations-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 15rem);
-    gap: 2rem;
-    align-content: center;
-    justify-content: center;
-    background: rgb(80,173,149);
-    background: radial-gradient(circle, rgba(80,173,149,1) 0%, rgba(32,116,215,1) 100%);
-    padding-block: 2rem;
-    
-            
-}
-
-.img-overlay{
-    position: relative;
-}
-
-.img-destinations{
-    margin: auto;
-    width: 15rem;
-    height: 10rem;
-    border-radius: 2rem;
-    box-shadow: 10px 10px 5px #605a5a99;
-    transition: 0.2s; 
-}
-
-.overlay{
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    color: white;
-    font-size: 1rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
 
 @media (min-width: 576px){
 
-    .navigation-menu {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: rgba(9, 150, 150, 0.56);
-        margin-block: 3rem;
-        border-radius: 2rem;
-        padding: 0.5rem;
-        column-gap: 50px;
-        margin-inline: 2rem;
+    .destinations-title{
+        font-size: 40px;
     }
-
-    .logo{
-        width: auto;
-        height: 2.5rem;
-    }
-
-    .menu-items{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        column-gap: 1.5rem;        
-    }
-
-   
 }
+

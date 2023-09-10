@@ -4,110 +4,38 @@
     box-sizing: border-box;
 }
 
- .header-aboutus{   
+ .main{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 1px 6px 2px rgba(65, 63, 63, 0.322);      
-    background-image: linear-gradient(rgb(173, 23, 23), rgb(250, 250, 91));
+    text-align: center;
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    line-height: 23px;
+    gap: 2.5rem;
+    margin-block-start: 5rem;
+    margin-inline: 2rem;
+ }
+
+ .services-title{
+    font-family: 'Crimson Pro', serif;
+    color: rgb(39, 112, 152);
+    font-size: 30px;
 }
 
-.about-us-logo{
-    width: 9rem;
-}
-
-.home-button{
-    text-decoration: none;
-    color:black;
-    background-color: white;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
-    border-radius: 2rem;
-    margin-inline-end: 0.5rem;
-    box-shadow: 1px 1px 5px 1px rgba(65, 63, 63, 0.523);
-}
-
- .services-container{
-
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
-
-}
-
-.services-title{
-    
-    font-family: 'Nunito Sans', sans-serif;
-    color: rgb(4, 3, 73);
-    
-}
-
-.services-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    line-height: 25px;
-    justify-content: center;
-    margin: 2rem;
-}
-
-.services-img{     
-    width: 100%;
+ .services-image{
+    width: 70%;
     height: auto;
-}
-
-
-.footer-info{
-    display: flex;
-    justify-content: space-between;   
-    padding-block-start: 2rem; 
-    margin-inline: 1rem;      
-  
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
 
 
 @media (min-width: 576px){
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-
-   
- .services-container{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
-    margin-top: 2rem;
-
-}
-
-.services-img{     
-    display: block;
-    width: 40%;
-    margin-inline-end: 3rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-    .services-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 2rem;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 16px;
-        line-height: 25px;
-        
+    .services-title{
+        font-size: 50px;
     }
 
 
 }
+

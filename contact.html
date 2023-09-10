@@ -1,51 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Pro:wght@200&family=Nunito+Sans:opsz,wght@6..12,300&family=Sacramento&family=Satisfy&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-aboutus">
-        <img src="icon/logo.png" class="about-us-logo"  alt="">
-        <a href="index.html" class="home-button">Acasă</a>
+    <div class="header-container">
+        <div class="slogan-container">
+            <img src="icon/logo.png" class="header-logo" alt="logo agentie"> 
+            <h2 class="slogan">Visează, Explorează, <br> Descoperă</h2>
+        </div>
+        <a class="contact-link" href="contact.html">
+            <img src="icon/telephone.png" class="contact-icon" alt="pictograma telefon">
+            <img src="icon/mail.png" class="contact-icon" alt="pictograma mail">
+        </a>
     </div>
-    <img src="img-contact/travel.jpg" class="contact-img" alt="">
-    <div class="contact-paragraph">
+    <nav class="navigation-menu">
+        <div class="menu-items">
+            <a href="index.html" class="menu-button">Acasă</a>
+            <a href="destinations.html" class="menu-button">Destinații</a>
+            <a href="services.html" class="menu-button">Servicii</a>
+            <a href="aboutus.html" class="menu-button">Despre Noi</a>
+            <a href="contact.html" class="menu-button">Contact</a>
+        </div>
+    </nav>
+    <div class="main">
+        <h1 class="contact-title">Travel Zone <br> <br> Contact <span class="emoji">&#9969;</span></h1>
+        <img src="img-contact/travel.jpg" class="contact-image" alt="imagine microbuz">
         <h2>Bun venit pe pagina noastra de contact!</h2>
-        <p> Suntem bucurosi sa te avem pe site-ul nostru si sa aflam ca esti interesat sa iei legatura cu noi. 
+        <p>
+            Suntem bucurosi sa te avem pe site-ul nostru si sa aflam ca esti interesat sa iei legatura cu noi. 
             Feedback-ul si sugestiile tale sunt esentiale pentru a ne imbunatati serviciile si a iti oferi o experienta cat mai placuta!
             Daca ai intrebari, nelamuriri sau doar doresti sa ne cunosti mai bine, suntem aici pentru a te ajuta si indruma. Echipa noastra dedicata de profesionisti iti va raspunde prompt si cu drag la orice solicitare ai.
         </p>
         <h3>Informatii de contact</h3>
+        <div class="contact-info">
+            <p>
+                <b> Adresa</b> 
+                <br>
+                Bd. București Nr. 44, Baia Mare, 430013 
+            </p>
+            <p>
+                <b>Telefon</b> <br>
+                0275288691
+            </p>
+            <p>
+                <b>E-mail</b> <br>
+                office@travelzone.ro
+            </p>
+            <p>
+                <b>Program de lucru</b> <br>
+                Luni-Vineri: 09:00 - 17:00 <br>
+                Sambata: 10:00 - 13:00 <br>
+                Duminica: Închis <br>
+            </p>
+        </div>
+        <div class="location">
+            <img src="icon/pin.png" class="location-icon" alt="pictograma locatie">
+            <h3> Aici ne puteti gasi! </h3>
+        </div>
+        <img src="img-contact/maps.png" class="maps-img" alt="imagine harta">
     </div>
+    <div class="footer-info">
+        <div>
+            <h4>Contactați-ne</h4>
+            <p>
+                Telefon: 0275288691 <br>
+                E-mail: office@travelzone.ro <br>
+                Web: www.travelzone.ro
+            </p>
+        </div>
+        <div>
+            <h4>Adresa noastra</h4>
+            <p>    
+                Bd. București nr. 44 <br> Baia Mare, 430013
+            </p>
+        </div>
+    </div>     
     
-    <div class="contact-info">
-
-        <p>
-            <b> Adresa</b> 
-            <br>
-            Bd. București Nr. 44, Baia Mare, 430013 
-        </p>
-        <p>
-            <b>Program de lucru</b> <br>
-            Luni-Vineri: 09:00 - 17:00 <br>
-            Sambata: 10:00 - 13:00 <br>
-            Duminica: Închis <br>
-        </p>
-        <p>
-            <b>Telefon</b> <br>
-            0275288691
-        </p>
-        <p>
-            <b>E-mail</b> <br>
-            office@travelzone.ro
-        </p>
-    </div>
-    <img src="img-contact/maps.png" class="maps-img" alt="">
 </body>
 </html>

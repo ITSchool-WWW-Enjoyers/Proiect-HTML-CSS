@@ -1,86 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinatii</title>
     <link rel="stylesheet" href="destinations.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400;700&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Pro:wght@200&family=Nunito+Sans:opsz,wght@6..12,300&family=Sacramento&family=Satisfy&family=Staatliches&display=swap" rel="stylesheet">
 <body>
-    
-    <div class="header-destinations"> 
-        <h2 class="slogan">Visează, Explorează, <br> Descoperă</h2>
+    <div class="header-container">
+        <div class="slogan-container">
+            <img src="icon/logo.png" class="header-logo" alt="logo agentie"> 
+            <h2 class="slogan">Visează, Explorează, <br> Descoperă</h2>
+        </div>
         <a class="contact-link" href="contact.html">
-            <img src="icon/telephone.png" class="contact-item" alt="">
-            <img src="icon/contact.png" class="contact-item" alt="">
+            <img src="icon/telephone.png" class="contact-icon" alt="pictograma telefon">
+            <img src="icon/mail.png" class="contact-icon" alt="pictograma mail">
         </a>
     </div>
-    <div class="navigation-menu">
-        <img src="icon/logo.png" class="logo" alt="">
+    <nav class="navigation-menu">
         <div class="menu-items">
             <a href="index.html" class="menu-button">Acasă</a>
+            <a href="destinations.html" class="menu-button">Destinații</a>
             <a href="services.html" class="menu-button">Servicii</a>
             <a href="aboutus.html" class="menu-button">Despre Noi</a>
             <a href="contact.html" class="menu-button">Contact</a>
         </div>
-    </div>
+    </nav>
     <div>
-        <img src="img-destinations/relax.jpg" class="relax-background" alt="">   
+        <img src="img-destinations/relax.jpg" class="relax-background" alt="imagine plaja">   
     </div>
-    <h1 class="destinations-title"> Sejururi cu avionul</h1>
+    <h1 class="destinations-title"> Sejururi cu avionul <span class="emoji">&#9969;</span></h1>
     <div class="destinations-container"> 
         <div class="img-overlay">
-            <img src="img-destinations/skiathos-island.jpg" class="img-destinations" alt="">
+            <img src="img-destinations/skiathos-island.jpg" class="img-destinations" alt="imagine insula Skiathos">
             <div class="overlay">
-                    Skiathos
-            </div>
-        </div>
-            
-        <div class="img-overlay">
-            <img src="img-destinations/mallorca.jpg" class="img-destinations" alt="">
-            <div class="overlay">
-                Mallorca
-            </div>
-        </div>  
-        <div class="img-overlay">
-            <img src="img-destinations/larnaca-cipru.jpg" class="img-destinations" alt="">
-            <div class="overlay">
-                Cipru
-            </div>
-        </div>   
-        <div class="img-overlay">
-            <img src="img-destinations/istanbul.jpg" class="img-destinations" alt="">
-            <div class="overlay">
-                Istanbul
-            </div>
-        </div>  
-        <div class="img-overlay">
-            <img src="img-destinations/hurghada-egipt.jpg" class="img-destinations" alt="">
-            <div class="overlay">
-                Hurghada
+                    Skiathos <br> <span class="price-font">prețuri de la </span>  <br>  450 € / pers. 
             </div>
         </div> 
         <div class="img-overlay">
-            <img src="img-destinations/antalya.jpg" class="img-destinations" alt="">
+            <img src="img-destinations/mallorca.jpg" class="img-destinations" alt="imagine Mallorca">
             <div class="overlay">
-                Antalya
+                Mallorca <br> <span class="price-font"> prețuri de la </span> <br>  608 € / pers. 
             </div>
         </div>  
         <div class="img-overlay">
-            <img src="img-destinations/dubai.jpg" class="img-destinations" alt="">
+            <img src="img-destinations/larnaca-cipru.jpg" class="img-destinations" alt="imagine Cipru">
             <div class="overlay">
-                Dubai
+                Cipru <br><span class="price-font">prețuri de la </span> <br>  499 € / pers. 
+            </div>
+        </div>   
+        <div class="img-overlay">
+            <img src="img-destinations/istanbul.jpg" class="img-destinations" alt="imagine Istanbul">
+            <div class="overlay">
+                Istanbul <br> <span class="price-font"> prețuri de la </span> <br>  488 € / pers. 
             </div>
         </div>  
         <div class="img-overlay">
-            <img src="img-destinations/republica-dominicana.jpg" class="img-destinations" alt="">
+            <img src="img-destinations/hurghada-egipt.jpg" class="img-destinations" alt="imagine Hurghada-Egipt">
             <div class="overlay">
-                Republica Dominicana
+                Hurghada <br><span class="price-font">prețuri de la </span> <br>  699 € / pers. 
+            </div>
+        </div> 
+        <div class="img-overlay">
+            <img src="img-destinations/antalya.jpg" class="img-destinations" alt="imagine Antalya">
+            <div class="overlay">
+                Antalya <br><span class="price-font"> prețuri de la </span> <br>  451 € / pers. 
+            </div>
+        </div>  
+        <div class="img-overlay">
+            <img src="img-destinations/dubai.jpg" class="img-destinations" alt="imagine Dubai">
+            <div class="overlay">
+                Dubai <br><span class="price-font"> prețuri de la </span> <br>  649 € / pers. 
+            </div>
+        </div>  
+        <div class="img-overlay">
+            <img src="img-destinations/republica-dominicana.jpg" class="img-destinations" alt="imagine Rep. Dominicana">
+            <div class="overlay">
+                Republica Dominicana <br><span class="price-font"> prețuri de la </span> <br>  1659 € / pers. 
             </div>
         </div>
+        <div class="img-overlay">
+            <img src="img-destinations/zanzibar.jpg" class="img-destinations" alt="imagine Zanzibar">
+            <div class="overlay">
+                Zanzibar <br><span class="price-font">prețuri de la </span>  <br>  999 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/creta.jpg" class="img-destinations" alt="imagine Creta">
+            <div class="overlay">
+                Creta - Heraklion <br><span class="price-font"> prețuri de la </span> <br>  372 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/singapore.jpg" class="img-destinations" alt="imagine Singapore">
+            <div class="overlay">
+                Singapore <br><span class="price-font"> prețuri de la </span> <br>  1659 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/bali.jpg" class="img-destinations" alt="imagine Bali">
+            <div class="overlay">
+                Bali - Indonesia <br><span class="price-font"> prețuri de la </span> <br>  1.257 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/kenya.jpg" class="img-destinations" alt="imagine safari Kenya">
+            <div class="overlay">
+                Kenya <br><span class="price-font"> prețuri de la </span> <br>  1.279  € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/bahamas.jpg" class="img-destinations" alt="imagine Bahamas">
+            <div class="overlay">
+                Bahamas <br><span class="price-font"> prețuri de la </span> <br>  1 123 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/seychelles.jpg" class="img-destinations" alt="imagine Seychelles">
+            <div class="overlay">
+                Seychelles <br><span class="price-font"> prețuri de la </span> <br>  1 318 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/corfu.jpg" class="img-destinations" alt="imagine Corfu">
+            <div class="overlay">
+                Corfu <br><span class="price-font"> prețuri de la </span> <br>  433 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/thassos.jpg" class="img-destinations" alt="imagine Thassos">
+            <div class="overlay">
+                Thassos <br><span class="price-font">prețuri de la </span>  <br>  571 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/tenerife.jpg" class="img-destinations" alt="imagine Tenerife">
+            <div class="overlay">
+                Tenerife <br><span class="price-font">prețuri de la </span>  <br>  1.139 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/sarm-el-seyh.jpg" class="img-destinations" alt="Imagine Sarm-el-seyh">
+            <div class="overlay">
+                Sharm el sheikh <br><span class="price-font"> prețuri de la </span> <br>  408 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/roma.jpg" class="img-destinations" alt="imagine Roma">
+            <div class="overlay">
+                Roma <br><span class="price-font">prețuri de la </span> <br>  590 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/olanda.jpg" class="img-destinations" alt="imagine Amsterdam">
+            <div class="overlay">
+                Amsterdam <br><span class="price-font">prețuri de la </span> <br>  572 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/elvetia.jpg" class="img-destinations" alt="imagine Zurich">
+            <div class="overlay">
+                Zurich <br><span class="price-font"> prețuri de la </span> <br>  750 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/israel.jpg" class="img-destinations" alt="imagine Israel">
+            <div class="overlay">
+                Israel <br><span class="price-font"> prețuri de la </span> <br>  795 € / pers. 
+            </div>
+        </div>
+        <div class="img-overlay">
+            <img src="img-destinations/cuba.jpg" class="img-destinations" alt="imagine Cuba">
+            <div class="overlay">
+                Cuba <br><span class="price-font">prețuri de la </span>  <br>  2100 € / pers. 
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div>
+            <h4>Contactați-ne</h4>
+            <p>
+                Telefon: 0275288691 <br>
+                E-mail: office@travelzone.ro <br>
+                Web: www.travelzone.ro
+            </p>
+        </div>
+        <div>
+            <h4>Adresa noastra</h4>
+            <p>    
+                Bd. București nr. 44 <br> Baia Mare, 430013
+            </p>
+        </div>
+
     </div>
     
 </body>
