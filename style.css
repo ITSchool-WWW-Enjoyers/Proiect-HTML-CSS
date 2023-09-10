@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 30s ease-in-out infinite;
+}
+
+.companie{
+    color: white;
+    text-align: center;    
+    padding-block-start: 1.25rem;
+    font-family: Rubik, sans-serif, Arial;
+}
+
+.meniu{
+    color: white;
+    text-decoration: none;
+    font-size: 1.563rem;
+    font-family: Rubik, sans-serif, Arial;
+}
+
+.meniu-activ{
+    color: black;
+    text-decoration: none;
+    font-size: 1.563rem;
+    font-family: Rubik, sans-serif, Arial;
+}
+
+.navigare{
+    padding-block-start: 0.938rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.chenar-meniu-activ{
+    width: 6.25rem;    
+    margin-inline: 0.5rem;
+    background: white;
+    border-radius: 0.625rem; 
+}
+
+.chenar-meniu{
+    margin-inline: 0.75rem;
+}
+
+.rand{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spatiu{
+    padding-block-start: 2.5rem;
+}
+
+.chenar{
+    margin: auto;
+    width: 18.125rem;    
+    margin-block-end: 1.25rem;
+    background: white;
+    border-radius: 0.625rem; 
+}
+
+.titlu{
+    padding: 0.625rem;
+    font-family: Rubik, sans-serif, Arial;
+}
+
+.imagine{
+    width: 100%;
+}
+
+.text{
+    padding: 1rem;
+    padding-inline-start: 1.25rem;
+    font-family: Rubik, sans-serif, Arial;  
+}
+
+.fa-brands{
+    text-decoration: none;
+    margin-inline: 0.938rem;
+    margin-block: 1.125rem;
+    padding-block: 0.625rem;    
+}
+
+.media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titlu_logo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 5.25rem;
+}

@@ -1,0 +1,111 @@
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@media (min-width: 320px) {
+
+    .chenar{
+        width: 90%;  
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media (min-width: 425px){
+    .chenar{
+        width: 90%;
+    }
+}
+
+@media (min-width:768px){
+    .chenar{
+        width: 21.875rem;
+    }
+    .rand-unu{
+        display: flex;
+        flex-direction: row;
+    }
+    .rand-doi{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+    }
+    .spatiu{
+        padding-inline: 0.625rem;
+        padding-block-end: 1.25rem;
+    }
+}
+
+@media(min-width:1024px){
+    .chenar{
+        width: 28.125rem;
+    }
+    .fa-brands{
+        padding-inline: 1.25rem;
+    }
+}
+
+@media(min-width:1440px){
+    .chenar{
+        width: 37.5rem;
+    }
+    .spatiu{
+        padding-inline: 1.25rem;
+    }
+}
+
+@media(min-width:2560px){
+    .chenar{
+        width: 120rem;
+        border-radius: 3.125rem;
+    }
+    .titlu{
+        font-size: 6.25rem;
+        padding-inline-start: 3.125rem;
+        padding-block: 3.125rem;
+    }
+    .text{
+        font-size: 6.25rem;
+        padding-inline-start: 4.375rem;
+        padding-block-end: 3.75rem;
+    }
+    .spatiu{
+        padding: 6.25rem;
+    }
+    iframe{
+        height: 115rem;
+    }
+    .companie{
+        font-size: 18.75rem;
+    }
+    .meniu {
+        font-size: 9.375rem;
+        padding-inline: 2.5rem;
+    }
+    .meniu-activ{
+        font-size: 9.375rem;
+    }
+    .chenar-meniu-activ{
+        width: 37.5rem;
+        border-radius: 4.375rem;
+    }
+    img{
+            width: 31.25rem;
+    }
+    .fa-brands{
+        font-size: 200px !important;
+    }
+    #social_media{  
+        padding-block: 6.25rem;
+        padding-inline: 6.25rem;
+    }
+}
