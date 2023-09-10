@@ -167,6 +167,13 @@ body {
   margin: auto auto 0 auto;
 }
 
+:is(.image-final, .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+  display: flex;
+  width: 92vw;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
       background: #0B1D27; 
@@ -275,8 +282,12 @@ body {
     margin: 0;
   }
   
-#topButton {
+  #topButton {
     transform: scale(1.05); 
+  }
+
+  :is(.image-final, .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+    border-radius: 2.5rem; 
   }
 }
 

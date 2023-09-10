@@ -13,12 +13,7 @@
 }
 
 :is(.image-final, .image2, .image3) {
-    display: flex;
-    width: 92vw;
-    border-radius: 1.25rem;
-    object-fit: cover;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-inline: auto;
 }
 
 :is(.image-final, .image3) {
@@ -37,10 +32,6 @@
         flex-direction: row;
         margin: 0;
         align-items: center;
-    }
-
-    :is(.image-final, .image2, .image3) {
-        border-radius: 2.5rem; 
     }
 
     .image-final {

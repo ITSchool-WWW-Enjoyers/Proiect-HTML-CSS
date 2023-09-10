@@ -13,10 +13,6 @@
 }
 
 :is(.image1, .image2, .image3) {
-    display: flex;
-    width: 92vw;
-    border-radius: 1.25rem;
-    object-fit: cover;
     margin: 0 auto 0 auto;
 }
 
