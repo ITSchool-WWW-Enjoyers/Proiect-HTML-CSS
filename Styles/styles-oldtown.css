@@ -1,0 +1,53 @@
+@import url(styles-global.css);
+
+.header-item {
+    background-image: url(../OltTown-Assets/header-image.jpg);
+}
+
+.header-text {
+    min-width: 70%;
+}
+
+.paragraph-style {
+    margin: 0 auto;
+}
+
+:is(.image1, .image2, .image3) {
+    margin: 0 auto 0 auto;
+}
+
+@media (min-width: 1515px) {
+    .rows {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    .rows {
+        gap: 2.5rem;
+    }
+
+    .half {
+        width: 50%;
+    }
+
+    .special-alignment {
+        width: 70%;
+    }
+
+    .image1 {
+        width: 100%;
+        height: 50rem;
+    }
+
+    .image2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .image3 {
+        width: 100%;
+        height: auto;
+    }
+}

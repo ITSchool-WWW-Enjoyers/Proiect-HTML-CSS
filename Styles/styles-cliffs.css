@@ -1,0 +1,59 @@
+@import url(styles-global.css);
+
+.header-item {
+    background-image: url(../Cliffs-Assets/header-image.jpg);
+}
+
+.header-text {
+    min-width: 70%;
+}
+
+.paragraph-style {
+    margin: auto;
+}
+
+:is(.image-final, .image2, .image3) {
+    margin-inline: auto;
+}
+
+:is(.image-final, .image3) {
+    margin-block-start: 1rem;
+}
+
+@media (min-width: 1515px) {
+    .header-text {
+        width: auto;
+        font-size: 6.25rem; 
+    }
+
+    .rows {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    .image-final {
+        margin: 0;
+        max-width: 40rem;
+        height: 100%;
+    }
+
+    .image2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .image3 {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1471px) and (max-width: 1650px) {
+    .paragraph-style {
+        font-size: 1.6rem; 
+    }
+}

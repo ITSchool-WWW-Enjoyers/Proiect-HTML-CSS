@@ -1,0 +1,303 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 auto;
+}
+
+#topButton {
+  display: none;
+  position: absolute;
+  color: transparent;
+}
+
+.header-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.logo-header {
+  height: 5vh;
+  width: 8vw;
+  position: absolute;
+  inset-inline: 1rem;
+  inset-block: 0.75rem;
+  margin: 0;
+}
+
+.header-text {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat, Segoe UI;
+  font-size: 2.19rem; 
+  font-weight: 700; 
+  color: #FFF;
+  margin: 0 auto auto auto;
+  position: absolute;
+  inset-block-start: 20%;
+  user-select: none;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, Segoe UI;
+  gap: 1.19rem;
+  padding: 1.13rem 1rem 0 1rem;
+  margin: 0;
+}
+
+.headings {
+  display: flex;
+  font-size: 1.5625rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto; 
+  width: 92vw;
+}
+
+.paragraph-style {
+  color: #0B1D27;
+  font-size: 0.95rem; 
+  font-weight: 500; 
+  width: 92vw;
+}
+
+.credits {
+  color: #0B1D27; 
+  text-align: center;
+  margin-inline: auto;
+  font-size: 0.375rem;
+  font-family: Montserrat, Segoe UI;
+  font-weight: 500; 
+  padding-block-start: 1.44rem;
+  padding-block-end: 1.06rem;
+  box-sizing: border-box;
+}
+
+#notextdeco {
+  text-decoration: none;
+}
+
+.navbar {
+  height: 30vh;
+  width: auto;
+  font-family: Montserrat, Segoe UI;
+  overflow: hidden;
+  float: right;
+  margin: 0;
+  padding-block-start: 0.75rem;
+  padding-inline-end: 0.25rem;
+}
+
+.firstlink {
+  float: left;
+  color: #FFF;
+  font-size: 0.94rem;
+  font-weight: 600; 
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.padding-dropdown {
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.secondlink {
+  float: left;
+  color: #FFF;
+  font-weight: 600; 
+  padding: 0.31rem 1rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin: 0;
+}
+
+:is(.dropdown .dropbutton) {
+  font-size: 0.94rem;
+  font-weight: 600; 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 0.9rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  font-size: 0.625rem; 
+  display: none;
+  position: absolute;
+  border-radius: 1.25rem;
+  background: rgba(11, 29, 39, 0.40); 
+  z-index: 1;
+}
+
+:is(.dropdown-content a) {
+  float: none;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
+}
+
+#no-margin {
+  margin: auto auto 0 auto;
+}
+
+:is(.image-final, .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+  display: flex;
+  width: 92vw;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background: #0B1D27; 
+  }
+
+  .headings {
+      color: #FFF;
+  }
+
+  .paragraph-style {
+      color: #FFF;
+  }
+
+  .credits {
+      color: #FFF;
+  }
+}
+
+@media (min-width:771px) {
+  :is(.firstlink, .dropdown .dropbutton) {
+    font-size: 1.40rem;
+  }
+
+  .dropdown-content {
+    font-size: 0.75rem;
+  }
+
+  .header-text {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1515px) {
+  .header-item {
+      height: 100vh;
+  }
+
+  .logo-header {
+    height: 8vh;
+    width: 8vw;
+    position: absolute;
+    inset-inline: 0.5rem;
+    inset-block: 1rem;
+  }
+
+  .header-text {
+    width: auto;
+    inset-block-start: 40%;
+    font-size: 6.25rem; 
+  }
+
+  .container {
+    gap: 2.56rem;
+    padding: 2.56rem 3.12rem 0 3.12rem;
+    margin: 0 6.25rem 0 6.25rem;
+  }
+
+  .headings {
+    font-size: 4rem; 
+    margin: auto 5rem auto auto;  
+    width: 100%;
+  }
+
+  .paragraph-style {
+    font-size: 2rem; 
+    line-height: 2.5rem;
+    max-height: 100%;
+    margin: auto 5rem auto auto;
+    width: 100%;
+  }
+
+  .credits {
+    font-size: 1rem;
+  }
+
+  :is(.firstlink, .dropdown .dropbutton) {
+    font-size: 1.60rem;
+  }
+
+  .dropdown-content {
+    font-size: 1.60rem;
+  }
+
+  :is(.dropdown .dropbutton) {
+    padding: 0.9rem 3.14rem;
+  }
+ 
+  .secondlink {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  #topButton {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 2; 
+    border: none; 
+    outline: none;
+    background-color: #555; 
+    color: white; 
+    cursor: pointer; 
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  
+  #topButton {
+    transform: scale(1.05); 
+  }
+
+  :is(.image-final, .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10) {
+    border-radius: 2.5rem; 
+  }
+}
+
+@media (min-width: 1771px) {
+  .container {
+    margin: 0 12.5rem 0 12.5rem;
+  }
+}
+
+@media (min-width: 1471px) and (max-width: 1560px) {
+  .paragraph-style {
+      font-size: 1.6rem; 
+  }
+}
