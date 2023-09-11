@@ -48,9 +48,10 @@
 
 @media (min-width: 1515px) {
     .rows {
-        display: flex;
+        display: grid;
+        grid-template-areas: 
+        "text image";
         gap: 2.5rem;
-        flex-direction: row;
         margin: 0;
         align-items: center;
     }
@@ -58,11 +59,17 @@
     :is(.image1, .image2) {
         width: auto;
         object-fit: cover;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
+        margin-inline: 0;
+    }
+
+    .text {
+        display: grid;
+        grid-area: text;
     }
 
     .image1 {
+        display: grid;
+        grid-area: image;
         margin: 0;
         max-width: 40rem;
         height: 100%;
@@ -91,8 +98,7 @@
         height: 25rem;
         border-radius: 1.25rem;
         object-fit: cover;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
+        margin-inline: 0;
     }
 
     .textoverimage {
