@@ -34,6 +34,7 @@ body {
 .image {
     width: 100%;
     height: 30rem;
+    color: red;
 }
 
 .logo-HP {
@@ -65,13 +66,8 @@ body {
     height: auto;
 }
 
-@media only screen and (max-width: 500px) {
-    .carusel {
-        margin-inline-start: 4rem;
-        display: flex;
-        flex-direction: column;
-    }
 
+@media only screen and (max-width: 500px) {
     .image {
         width: auto;
         height: 30rem;
@@ -79,5 +75,13 @@ body {
 
     .navbar {
         gap: 1rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .carusel {
+        margin-inline-start: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

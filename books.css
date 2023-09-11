@@ -81,6 +81,10 @@ body {
     .carusel-item {
         column-gap: 0rem;
         grid-template-columns: 20rem;
-
     }
+}
+@media only screen and (max-width: 900px) {
+ .navbar{
+    gap: 1rem;
+ }
 }
